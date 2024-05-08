@@ -20,8 +20,8 @@ module datapath(input  logic 		   clk, reset,
 	// Next PC
 	mux2 #(32)  pcmux(PCPlus4, Result, PCSrc, PCNext);
 	flopr #(32) pcreg(clk, reset, PCNext, PC);
-	adder #(32) pcadd1(PC, 32'b100, PCPlus4);
-	adder #(32) pcadd2(PCPlus4, 32'b100, PCPlus8);
+	adder #(32) pcadd1(PC, 32'b001, PCPlus4);       // A pesar de ser PC+4, se debe de agregar logica para
+	adder #(32) pcadd2(PCPlus4, 32'b001, PCPlus8);  // realizar un PC+1 por la manera en que funciona la ROM
 	
 	// Register file
 	mux2 #(4) ra1mux(Instr[19:16], 4'b1111, RegSrc[0], RA1);
@@ -33,7 +33,7 @@ module datapath(input  logic 		   clk, reset,
 	
 	// ALU
 	mux2 #(32) srcbmux(WriteData, ExtImm, ALUSrc, SrcB);
-	//ALUChava        ownALU(SrcA, SrcB, ALUControl, ALUResult, ALUFlags);
-	alu ownALU(SrcA, SrcB, ALUControl, ALUResult, ALUFlags);
+	ALUChava   ownALU(SrcA, SrcB, ALUControl, ALUFlags, ALUResult);
+	//alu ownALU(SrcA, SrcB, ALUControl, ALUResult, ALUFlags);
 					 
 endmodule

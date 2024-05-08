@@ -15,7 +15,15 @@ module top(input logic 			 clk, reset,
 	arm arm1(clk, reset, PC, Instr, MemWrite, DataAdr, WriteData, ReadData);
 	//ROM rom(ROM_Addres, clk, output_ROM);
 	//ROM_Instruction rom_instruction(PC, clk, Instr);
-	imem imem1(PC, Instr);
+	//imem imem1(PC, Instr);
+	
+	// Instancia de módulo ROM personalizado
+    instructionROM rom1(
+        .address(PC[15:0]), 
+        .clock(clk),
+        .q(Instr)
+    );
+	 
 	dmem dmen1(clk, MemWrite, DataAdr, WriteData, ReadData);
 
 

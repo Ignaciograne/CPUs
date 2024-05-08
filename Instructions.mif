@@ -1,0 +1,30 @@
+WIDTH=32;
+DEPTH=22;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+    0   :   E04F000F;  -- Instrucción en dirección 0
+    1   :   E2802005;  -- Instrucción en dirección 1
+    2   :   E280300C;  -- Instrucción en dirección 2
+    3   :   E2437009;  -- Instrucción en dirección 3
+    4   :   E1874002;  -- Instrucción en dirección 4
+    5   :   E0035004;  -- Instrucción en dirección 5
+    6   :   E0855004;  -- Instrucción en dirección 6
+    7   :   E0558007;  -- Instrucción en dirección 7
+    8   :   E0538004;  -- Instrucción en dirección 8
+    9   :   AA000000;  -- Instrucción en dirección 9
+    A   :   E2805000;  -- Instrucción en dirección A
+    B   :   E0578002;  -- Instrucción en dirección B
+    C   :   B2857001;  -- Instrucción en dirección C
+    D   :   E0477002;  -- Instrucción en dirección D
+    E   :   E5837054;  -- Instrucción en dirección E
+    F   :   E5902060;  -- Instrucción en dirección F
+    10  :   E08FF000;  -- Instrucción en dirección 10
+    11  :   E280200E;  -- Instrucción en dirección 11
+    12  :   EA000001;  -- Instrucción en dirección 12
+    13  :   E280200D;  -- Instrucción en dirección 13
+    14  :   E280200A;  -- Instrucción en dirección 14
+    15  :   E5802064;  -- Instrucción en dirección 15
+END;
