@@ -24,7 +24,16 @@ module top(input logic 			 clk, reset,
         .q(Instr)
     );
 	 
-	dmem dmen1(clk, MemWrite, DataAdr, WriteData, ReadData);
+	//dmem dmen1(clk, MemWrite, DataAdr, WriteData, ReadData);
+	
+	// Instancia de módulo RAM personalizado para datos
+	RAMMemory ram1(
+        .address(DataAdr[15:0]),
+        .clock(clk),
+        .data(WriteData),
+        .wren(MemWrite),
+        .q(ReadData)
+    );
 
 
 endmodule
