@@ -85,7 +85,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : A4        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : A5        :        :                   :         : 8A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A6        :        :                   :         : 8A        :                
 VCCIO8A                      : A7        : power  :                   : 2.5V    : 8A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A8        :        :                   :         : 8A        :                
+ReadDataM[0]                 : A8        : output : 2.5 V             :         : 8A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : A9        :        :                   :         : 8A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A10       :        :                   :         : 8A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A11       :        :                   :         : 8A        :                
@@ -118,6 +118,7 @@ VCCA_FPLL                    : AA8       : power  :                   : 2.5V    
 GND                          : AA9       : gnd    :                   :         :           :                
 VCCPD3A                      : AA10      : power  :                   : 2.5V    : 3A        :                
 GND                          : AA11      : gnd    :                   :         :           :                
+<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.pin
 MemWriteM                    : AA12      : output : 2.5 V             :         : 3A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA13      :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA14      :        :                   :         : 3B        :                
@@ -126,6 +127,16 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AA16      :        :                   :      
 VCCIO4A                      : AA17      : power  :                   : 2.5V    : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA18      :        :                   :         : 4A        :                
 WriteDataM[11]               : AA19      : output : 2.5 V             :         : 4A        : N              
+=======
+WriteDataM[10]               : AA12      : output : 2.5 V             :         : 3A        : N              
+WriteDataM[31]               : AA13      : output : 2.5 V             :         : 3B        : N              
+DataAdrM[15]                 : AA14      : output : 2.5 V             :         : 3B        : N              
+DataAdrM[24]                 : AA15      : output : 2.5 V             :         : 3B        : N              
+WriteDataM[30]               : AA16      : output : 2.5 V             :         : 4A        : N              
+VCCIO4A                      : AA17      : power  :                   : 2.5V    : 4A        :                
+WriteDataM[25]               : AA18      : output : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA19      :        :                   :         : 4A        :                
+>>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.pin
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA20      :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA21      :        :                   :         : 4A        :                
 GND                          : AA22      : gnd    :                   :         :           :                
@@ -134,7 +145,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AA24      :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA25      :        :                   :         : 5A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA26      :        :                   :         : 5B        :                
 VCCIO5B                      : AA27      : power  :                   : 2.5V    : 5B        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA28      :        :                   :         : 5B        :                
+WriteDataM[8]                : AA28      : output : 2.5 V             :         : 5B        : N              
 VREFB5BN0                    : AA29      : power  :                   :         : 5B        :                
 WriteDataM[2]                : AA30      : output : 2.5 V             :         : 5B        : N              
 GND                          : AB1       : gnd    :                   :         :           :                
@@ -148,12 +159,21 @@ nCSO, DATA4                  : AB8       :        :                   :         
 altera_reserved_tdo          : AB9       : output : 2.5 V             :         : 3A        : N              
 VCCPGM                       : AB10      : power  :                   : 1.8V/2.5V/3.0V/3.3V :           :                
 VCC_AUX                      : AB11      : power  :                   : 2.5V    :           :                
+<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.pin
 WriteDataM[31]               : AB12      : output : 2.5 V             :         : 3A        : N              
 DataAdrM[15]                 : AB13      : output : 2.5 V             :         : 3B        : N              
 VCCIO3B                      : AB14      : power  :                   : 2.5V    : 3B        :                
 WriteDataM[3]                : AB15      : output : 2.5 V             :         : 3B        : N              
 VCC_AUX                      : AB16      : power  :                   : 2.5V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB17      :        :                   :         : 4A        :                
+=======
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB12      :        :                   :         : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB13      :        :                   :         : 3B        :                
+VCCIO3B                      : AB14      : power  :                   : 2.5V    : 3B        :                
+ReadDataM[28]                : AB15      : output : 2.5 V             :         : 3B        : N              
+VCC_AUX                      : AB16      : power  :                   : 2.5V    :           :                
+DataAdrM[30]                 : AB17      : output : 2.5 V             :         : 4A        : N              
+>>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.pin
 VCCPD3B4A                    : AB18      : power  :                   : 2.5V    : 3B, 4A    :                
 GND                          : AB19      : gnd    :                   :         :           :                
 VCCPD3B4A                    : AB20      : power  :                   : 2.5V    : 3B, 4A    :                
@@ -178,15 +198,25 @@ GND                          : AC8       : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC9       :        :                   :         : 3A        :                
 VCCPD3A                      : AC10      : power  :                   : 2.5V    : 3A        :                
 VCCIO3A                      : AC11      : power  :                   : 2.5V    : 3A        :                
+<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.pin
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC12      :        :                   :         : 3A        :                
 VCCPD3B4A                    : AC13      : power  :                   : 2.5V    : 3B, 4A    :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC14      :        :                   :         : 3B        :                
+=======
+WriteDataM[4]                : AC12      : output : 2.5 V             :         : 3A        : N              
+VCCPD3B4A                    : AC13      : power  :                   : 2.5V    : 3B, 4A    :                
+ReadDataM[24]                : AC14      : output : 2.5 V             :         : 3B        : N              
+>>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.pin
 VCCPD3B4A                    : AC15      : power  :                   : 2.5V    : 3B, 4A    :                
 GND                          : AC16      : gnd    :                   :         :           :                
 VCCPD3B4A                    : AC17      : power  :                   : 2.5V    : 3B, 4A    :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC18      :        :                   :         : 4A        :                
 VCCPD3B4A                    : AC19      : power  :                   : 2.5V    : 3B, 4A    :                
+<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.pin
 DataAdrM[1]                  : AC20      : output : 2.5 V             :         : 4A        : N              
+=======
+DataAdrM[2]                  : AC20      : output : 2.5 V             :         : 4A        : N              
+>>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.pin
 VCCIO4A                      : AC21      : power  :                   : 2.5V    : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC22      :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC23      :        :                   :         : 4A        :                
@@ -213,9 +243,15 @@ VCCIO3B                      : AD13      : power  :                   : 2.5V    
 DataAdrM[11]                 : AD14      : output : 2.5 V             :         : 3B        : N              
 DNU                          : AD15      :        :                   :         :           :                
 VCCPD3B4A                    : AD16      : power  :                   : 2.5V    : 3B, 4A    :                
+<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.pin
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD17      :        :                   :         : 4A        :                
 VCCIO4A                      : AD18      : power  :                   : 2.5V    : 4A        :                
 WriteDataM[18]               : AD19      : output : 2.5 V             :         : 4A        : N              
+=======
+WriteDataM[27]               : AD17      : output : 2.5 V             :         : 4A        : N              
+VCCIO4A                      : AD18      : power  :                   : 2.5V    : 4A        :                
+DataAdrM[9]                  : AD19      : output : 2.5 V             :         : 4A        : N              
+>>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.pin
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD20      :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD21      :        :                   :         : 4A        :                
 VCC_AUX                      : AD22      : power  :                   : 2.5V    :           :                
@@ -239,17 +275,26 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AE9       :        :                   :      
 GND                          : AE10      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE11      :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE12      :        :                   :         : 3A        :                
+<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.pin
 WriteDataM[1]                : AE13      : output : 2.5 V             :         : 3B        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE14      :        :                   :         : 3B        :                
 VCCIO3B                      : AE15      : power  :                   : 2.5V    : 3B        :                
 DataAdrM[25]                 : AE16      : output : 2.5 V             :         : 4A        : N              
 DataAdrM[24]                 : AE17      : output : 2.5 V             :         : 4A        : N              
 DataAdrM[6]                  : AE18      : output : 2.5 V             :         : 4A        : N              
+=======
+ReadDataM[23]                : AE13      : output : 2.5 V             :         : 3B        : N              
+ReadDataM[9]                 : AE14      : output : 2.5 V             :         : 3B        : N              
+VCCIO3B                      : AE15      : power  :                   : 2.5V    : 3B        :                
+DataAdrM[25]                 : AE16      : output : 2.5 V             :         : 4A        : N              
+DataAdrM[26]                 : AE17      : output : 2.5 V             :         : 4A        : N              
+ReadDataM[15]                : AE18      : output : 2.5 V             :         : 4A        : N              
+>>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.pin
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE19      :        :                   :         : 4A        :                
 GND                          : AE20      : gnd    :                   :         :           :                
 VCCPD3B4A                    : AE21      : power  :                   : 2.5V    : 3B, 4A    :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE22      :        :                   :         : 4A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AE23      :        :                   :         : 4A        :                
+ReadDataM[16]                : AE23      : output : 2.5 V             :         : 4A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE24      :        :                   :         : 4A        :                
 VCCIO4A                      : AE25      : power  :                   : 2.5V    : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE26      :        :                   :         : 5A        :                
@@ -262,11 +307,16 @@ GND                          : AF2       : gnd    :                   :         
 GND                          : AF3       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF4       :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF5       :        :                   :         : 3A        :                
+<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.pin
 WriteDataM[13]               : AF6       : output : 2.5 V             :         : 3A        : N              
+=======
+WriteDataM[20]               : AF6       : output : 2.5 V             :         : 3A        : N              
+>>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.pin
 VCCIO3A                      : AF7       : power  :                   : 2.5V    : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF8       :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF9       :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF10      :        :                   :         : 3A        :                
+<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.pin
 DataAdrM[13]                 : AF11      : output : 2.5 V             :         : 3B        : N              
 GND                          : AF12      : gnd    :                   :         :           :                
 WriteDataM[10]               : AF13      : output : 2.5 V             :         : 3B        : N              
@@ -281,12 +331,29 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AF21      :        :                   :      
 VCCIO4A                      : AF22      : power  :                   : 2.5V    : 4A        :                
 DataAdrM[10]                 : AF23      : output : 2.5 V             :         : 4A        : N              
 WriteDataM[22]               : AF24      : output : 2.5 V             :         : 4A        : N              
+=======
+WriteDataM[0]                : AF11      : output : 2.5 V             :         : 3B        : N              
+GND                          : AF12      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF13      :        :                   :         : 3B        :                
+clk                          : AF14      : input  : 2.5 V             :         : 3B        : Y              
+ReadDataM[27]                : AF15      : output : 2.5 V             :         : 3B        : N              
+DataAdrM[20]                 : AF16      : output : 2.5 V             :         : 4A        : N              
+GND                          : AF17      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF18      :        :                   :         : 4A        :                
+DataAdrM[21]                 : AF19      : output : 2.5 V             :         : 4A        : N              
+DataAdrM[10]                 : AF20      : output : 2.5 V             :         : 4A        : N              
+ReadDataM[22]                : AF21      : output : 2.5 V             :         : 4A        : N              
+VCCIO4A                      : AF22      : power  :                   : 2.5V    : 4A        :                
+WriteDataM[15]               : AF23      : output : 2.5 V             :         : 4A        : N              
+DataAdrM[8]                  : AF24      : output : 2.5 V             :         : 4A        : N              
+>>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.pin
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF25      :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF26      :        :                   :         : 4A        :                
 GND                          : AF27      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF28      :        :                   :         : 5A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF29      :        :                   :         : 5A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF30      :        :                   :         : 5A        :                
+<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.pin
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG1       :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG2       :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG3       :        :                   :         : 3A        :                
@@ -294,10 +361,20 @@ VCCIO3A                      : AG4       : power  :                   : 2.5V    
 DataAdrM[5]                  : AG5       : output : 2.5 V             :         : 3A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG6       :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG7       :        :                   :         : 3A        :                
+=======
+ReadDataM[7]                 : AG1       : output : 2.5 V             :         : 3A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG2       :        :                   :         : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG3       :        :                   :         : 3A        :                
+VCCIO3A                      : AG4       : power  :                   : 2.5V    : 3A        :                
+ReadDataM[2]                 : AG5       : output : 2.5 V             :         : 3A        : N              
+WriteDataM[1]                : AG6       : output : 2.5 V             :         : 3A        : N              
+ReadDataM[29]                : AG7       : output : 2.5 V             :         : 3A        : N              
+>>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.pin
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG8       :        :                   :         : 3A        :                
 GND                          : AG9       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG10      :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG11      :        :                   :         : 3B        :                
+<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.pin
 WriteDataM[6]                : AG12      : output : 2.5 V             :         : 3B        : N              
 WriteDataM[27]               : AG13      : output : 2.5 V             :         : 3B        : N              
 GND                          : AG14      : gnd    :                   :         :           :                
@@ -310,6 +387,20 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AG20      :        :                   :      
 DataAdrM[19]                 : AG21      : output : 2.5 V             :         : 4A        : N              
 WriteDataM[25]               : AG22      : output : 2.5 V             :         : 4A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG23      :        :                   :         : 4A        :                
+=======
+ReadDataM[21]                : AG12      : output : 2.5 V             :         : 3B        : N              
+ReadDataM[5]                 : AG13      : output : 2.5 V             :         : 3B        : N              
+GND                          : AG14      : gnd    :                   :         :           :                
+ReadDataM[25]                : AG15      : output : 2.5 V             :         : 3B        : N              
+DataAdrM[18]                 : AG16      : output : 2.5 V             :         : 4A        : N              
+WriteDataM[13]               : AG17      : output : 2.5 V             :         : 4A        : N              
+DataAdrM[11]                 : AG18      : output : 2.5 V             :         : 4A        : N              
+VCCIO4A                      : AG19      : power  :                   : 2.5V    : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG20      :        :                   :         : 4A        :                
+WriteDataM[9]                : AG21      : output : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG22      :        :                   :         : 4A        :                
+WriteDataM[23]               : AG23      : output : 2.5 V             :         : 4A        : N              
+>>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.pin
 GND                          : AG24      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG25      :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG26      :        :                   :         : 4A        :                
@@ -318,6 +409,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AG28      :        :                   :      
 VCCIO5A                      : AG29      : power  :                   : 2.5V    : 5A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG30      :        :                   :         : 5A        :                
 GND                          : AH1       : gnd    :                   :         :           :                
+<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.pin
 WriteDataM[30]               : AH2       : output : 2.5 V             :         : 3A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AH3       :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AH4       :        :                   :         : 3A        :                
@@ -341,11 +433,37 @@ GND                          : AH21      : gnd    :                   :         
 WriteDataM[23]               : AH22      : output : 2.5 V             :         : 4A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AH23      :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AH24      :        :                   :         : 4A        :                
+=======
+DataAdrM[4]                  : AH2       : output : 2.5 V             :         : 3A        : N              
+WriteDataM[11]               : AH3       : output : 2.5 V             :         : 3A        : N              
+DataAdrM[12]                 : AH4       : output : 2.5 V             :         : 3A        : N              
+WriteDataM[18]               : AH5       : output : 2.5 V             :         : 3A        : N              
+GND                          : AH6       : gnd    :                   :         :           :                
+DataAdrM[19]                 : AH7       : output : 2.5 V             :         : 3B        : N              
+ReadDataM[30]                : AH8       : output : 2.5 V             :         : 3B        : N              
+WriteDataM[3]                : AH9       : output : 2.5 V             :         : 3B        : N              
+ReadDataM[31]                : AH10      : output : 2.5 V             :         : 3B        : N              
+GND                          : AH11      : gnd    :                   :         :           :                
+ReadDataM[17]                : AH12      : output : 2.5 V             :         : 3B        : N              
+ReadDataM[8]                 : AH13      : output : 2.5 V             :         : 3B        : N              
+ReadDataM[3]                 : AH14      : output : 2.5 V             :         : 3B        : N              
+ReadDataM[13]                : AH15      : output : 2.5 V             :         : 3B        : N              
+VCCIO4A                      : AH16      : power  :                   : 2.5V    : 4A        :                
+DataAdrM[5]                  : AH17      : output : 2.5 V             :         : 4A        : N              
+WriteDataM[16]               : AH18      : output : 2.5 V             :         : 4A        : N              
+DataAdrM[0]                  : AH19      : output : 2.5 V             :         : 4A        : N              
+DataAdrM[22]                 : AH20      : output : 2.5 V             :         : 4A        : N              
+GND                          : AH21      : gnd    :                   :         :           :                
+WriteDataM[5]                : AH22      : output : 2.5 V             :         : 4A        : N              
+WriteDataM[6]                : AH23      : output : 2.5 V             :         : 4A        : N              
+ReadDataM[6]                 : AH24      : output : 2.5 V             :         : 4A        : N              
+>>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.pin
 RESERVED_INPUT_WITH_WEAK_PULLUP : AH25      :        :                   :         : 4A        :                
 VCCIO4A                      : AH26      : power  :                   : 2.5V    : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AH27      :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AH28      :        :                   :         : 5A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AH29      :        :                   :         : 5A        :                
+<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.pin
 RESERVED_INPUT_WITH_WEAK_PULLUP : AH30      :        :                   :         : 5A        :                
 WriteDataM[16]               : AJ1       : output : 2.5 V             :         : 3A        : N              
 WriteDataM[20]               : AJ2       : output : 2.5 V             :         : 3A        : N              
@@ -373,12 +491,42 @@ VCCIO4A                      : AJ23      : power  :                   : 2.5V    
 WriteDataM[12]               : AJ24      : output : 2.5 V             :         : 4A        : N              
 DataAdrM[0]                  : AJ25      : output : 2.5 V             :         : 4A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AJ26      :        :                   :         : 4A        :                
+=======
+WriteDataM[22]               : AH30      : output : 2.5 V             :         : 5A        : N              
+WriteDataM[21]               : AJ1       : output : 2.5 V             :         : 3A        : N              
+WriteDataM[19]               : AJ2       : output : 2.5 V             :         : 3A        : N              
+GND                          : AJ3       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ4       :        :                   :         : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ5       :        :                   :         : 3B        :                
+WriteDataM[29]               : AJ6       : output : 2.5 V             :         : 3B        : N              
+WriteDataM[2]                : AJ7       : output : 2.5 V             :         : 3B        : N              
+VCCIO3B                      : AJ8       : power  :                   : 2.5V    : 3B        :                
+WriteDataM[24]               : AJ9       : output : 2.5 V             :         : 3B        : N              
+ReadDataM[18]                : AJ10      : output : 2.5 V             :         : 3B        : N              
+MemWriteM                    : AJ11      : output : 2.5 V             :         : 3B        : N              
+WriteDataM[26]               : AJ12      : output : 2.5 V             :         : 3B        : N              
+VCCIO3B                      : AJ13      : power  :                   : 2.5V    : 3B        :                
+ReadDataM[10]                : AJ14      : output : 2.5 V             :         : 3B        : N              
+VREFB3BN0                    : AJ15      : power  :                   :         : 3B        :                
+WriteDataM[17]               : AJ16      : output : 2.5 V             :         : 4A        : N              
+DataAdrM[16]                 : AJ17      : output : 2.5 V             :         : 4A        : N              
+GND                          : AJ18      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ19      :        :                   :         : 4A        :                
+ReadDataM[14]                : AJ20      : output : 2.5 V             :         : 4A        : N              
+DataAdrM[28]                 : AJ21      : output : 2.5 V             :         : 4A        : N              
+DataAdrM[6]                  : AJ22      : output : 2.5 V             :         : 4A        : N              
+VCCIO4A                      : AJ23      : power  :                   : 2.5V    : 4A        :                
+DataAdrM[7]                  : AJ24      : output : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ25      :        :                   :         : 4A        :                
+WriteDataM[28]               : AJ26      : output : 2.5 V             :         : 4A        : N              
+>>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.pin
 RESERVED_INPUT_WITH_WEAK_PULLUP : AJ27      :        :                   :         : 4A        :                
 GND                          : AJ28      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AJ29      :        :                   :         : 5A        :                
 GND                          : AJ30      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AK2       :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AK3       :        :                   :         : 3B        :                
+<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.pin
 WriteDataM[7]                : AK4       : output : 2.5 V             :         : 3B        : N              
 GND                          : AK5       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AK6       :        :                   :         : 3B        :                
@@ -400,6 +548,29 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AK21      :        :                   :      
 DataAdrM[3]                  : AK22      : output : 2.5 V             :         : 4A        : N              
 DataAdrM[8]                  : AK23      : output : 2.5 V             :         : 4A        : N              
 DataAdrM[4]                  : AK24      : output : 2.5 V             :         : 4A        : N              
+=======
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK4       :        :                   :         : 3B        :                
+GND                          : AK5       : gnd    :                   :         :           :                
+DataAdrM[1]                  : AK6       : output : 2.5 V             :         : 3B        : N              
+ReadDataM[20]                : AK7       : output : 2.5 V             :         : 3B        : N              
+ReadDataM[1]                 : AK8       : output : 2.5 V             :         : 3B        : N              
+ReadDataM[4]                 : AK9       : output : 2.5 V             :         : 3B        : N              
+VCCIO3B                      : AK10      : power  :                   : 2.5V    : 3B        :                
+DataAdrM[23]                 : AK11      : output : 2.5 V             :         : 3B        : N              
+DataAdrM[31]                 : AK12      : output : 2.5 V             :         : 3B        : N              
+ReadDataM[11]                : AK13      : output : 2.5 V             :         : 3B        : N              
+ReadDataM[26]                : AK14      : output : 2.5 V             :         : 3B        : N              
+GND                          : AK15      : gnd    :                   :         :           :                
+DataAdrM[13]                 : AK16      : output : 2.5 V             :         : 4A        : N              
+VREFB4AN0                    : AK17      : power  :                   :         : 4A        :                
+WriteDataM[7]                : AK18      : output : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK19      :        :                   :         : 4A        :                
+VCCIO4A                      : AK20      : power  :                   : 2.5V    : 4A        :                
+ReadDataM[12]                : AK21      : output : 2.5 V             :         : 4A        : N              
+DataAdrM[3]                  : AK22      : output : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK23      :        :                   :         : 4A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK24      :        :                   :         : 4A        :                
+>>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.pin
 GND                          : AK25      : gnd    :                   :         :           :                
 WriteDataM[26]               : AK26      : output : 2.5 V             :         : 4A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AK27      :        :                   :         : 4A        :                
@@ -473,7 +644,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : D5        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : D6        :        :                   :         : 8A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D7        :        :                   :         : 8A        :                
 VCCIO8A                      : D8        : power  :                   : 2.5V    : 8A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D9        :        :                   :         : 8A        :                
+ReadDataM[19]                : D9        : output : 2.5 V             :         : 8A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : D10       :        :                   :         : 8A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D11       :        :                   :         : 8A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D12       :        :                   :         : 8A        :                
@@ -900,7 +1071,11 @@ GND                          : V12       : gnd    :                   :         
 VCC                          : V13       : power  :                   : 1.1V    :           :                
 GND                          : V14       : gnd    :                   :         :           :                
 VCC                          : V15       : power  :                   : 1.1V    :           :                
+<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.pin
 DataAdrM[22]                 : V16       : output : 2.5 V             :         : 4A        : N              
+=======
+DataAdrM[27]                 : V16       : output : 2.5 V             :         : 4A        : N              
+>>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.pin
 RESERVED_INPUT_WITH_WEAK_PULLUP : V17       :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V18       :        :                   :         : 4A        :                
 GND                          : V19       : gnd    :                   :         :           :                
@@ -929,9 +1104,15 @@ GND                          : W11       : gnd    :                   :         
 VCC                          : W12       : power  :                   : 1.1V    :           :                
 GND                          : W13       : gnd    :                   :         :           :                
 VCC                          : W14       : power  :                   : 1.1V    :           :                
+<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.pin
 DataAdrM[21]                 : W15       : output : 2.5 V             :         : 3B        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : W16       :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W17       :        :                   :         : 4A        :                
+=======
+DataAdrM[29]                 : W15       : output : 2.5 V             :         : 3B        : N              
+DataAdrM[14]                 : W16       : output : 2.5 V             :         : 4A        : N              
+DataAdrM[17]                 : W17       : output : 2.5 V             :         : 4A        : N              
+>>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.pin
 GND                          : W18       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W19       :        :                   :         : 4A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W20       :        :                   :         : 5A        :                
@@ -962,12 +1143,16 @@ GND                          : Y14       : gnd    :                   :         
 GND                          : Y15       : gnd    :                   :         :           :                
 reset                        : Y16       : input  : 2.5 V             :         : 3B        : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y17       :        :                   :         : 4A        :                
+<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.pin
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y18       :        :                   :         : 4A        :                
+=======
+WriteDataM[12]               : Y18       : output : 2.5 V             :         : 4A        : N              
+>>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.pin
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y19       :        :                   :         : 4A        :                
 GND                          : Y20       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y21       :        :                   :         : 5A        :                
 VCCA_FPLL                    : Y22       : power  :                   : 2.5V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y23       :        :                   :         : 5A        :                
+WriteDataM[14]               : Y23       : output : 2.5 V             :         : 5A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y24       :        :                   :         : 5A        :                
 GND                          : Y25       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y26       :        :                   :         : 5B        :                

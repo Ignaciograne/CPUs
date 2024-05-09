@@ -1,5 +1,9 @@
 Assembler report for Processor
+<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.asm.rpt
 Thu May  9 05:20:49 2024
+=======
+Thu May  9 03:40:33 2024
+>>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.asm.rpt
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
@@ -39,7 +43,11 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
+<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.asm.rpt
 ; Assembler Status      ; Successful - Thu May  9 05:20:49 2024 ;
+=======
+; Assembler Status      ; Successful - Thu May  9 03:40:33 2024 ;
+>>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.asm.rpt
 ; Revision Name         ; Processor                             ;
 ; Top-level Entity Name ; top                                   ;
 ; Family                ; Cyclone V                             ;
@@ -73,6 +81,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
+<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.asm.rpt
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Assembler Device Options: C:/Users/Ignac/Documentos/Arqui1/PruebasDeProcesador/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.sof ;
 +----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -81,6 +90,16 @@ https://fpgasoftware.intel.com/eula.
 ; JTAG usercode  ; 0x05F409D5                                                                                                                                                        ;
 ; Checksum       ; 0x05F409D5                                                                                                                                                        ;
 +----------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+=======
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Ignac/Documentos/Arqui1/PruebasDeProcesador/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-VersionConROMs/Proyecto/output_files/Processor.sof ;
++----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                                                                                ;
++----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x05F892AC                                                                                                                                                             ;
+; Checksum       ; 0x05F892AC                                                                                                                                                             ;
++----------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+>>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.asm.rpt
 
 
 +--------------------+
@@ -89,14 +108,25 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.asm.rpt
     Info: Processing started: Thu May  9 05:20:39 2024
+=======
+    Info: Processing started: Thu May  9 03:40:21 2024
+>>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.asm.rpt
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Processor -c Processor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
+<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.asm.rpt
     Info: Peak virtual memory: 4904 megabytes
     Info: Processing ended: Thu May  9 05:20:49 2024
     Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:10
+=======
+    Info: Peak virtual memory: 4912 megabytes
+    Info: Processing ended: Thu May  9 03:40:33 2024
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:09
+>>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.asm.rpt
 
 

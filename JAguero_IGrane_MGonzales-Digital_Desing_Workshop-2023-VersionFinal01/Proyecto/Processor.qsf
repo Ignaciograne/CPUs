@@ -92,6 +92,19 @@ set_global_assignment -name QIP_FILE ROM_Instruction.qip
 set_global_assignment -name SYSTEMVERILOG_FILE Mux1.sv
 set_global_assignment -name SYSTEMVERILOG_FILE mux3.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ALUChava.sv
+<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-VersionFinal01/Proyecto/Processor.qsf
 set_global_assignment -name QIP_FILE RAM_Histogram.qip
 set_global_assignment -name QIP_FILE RAM_Image.qip
+=======
+set_global_assignment -name QIP_FILE instructionROM.qip
+set_global_assignment -name MIF_FILE RAM.mif
+set_global_assignment -name QIP_FILE RAMMemory.qip
+set_global_assignment -name QIP_FILE LaterRAM.qip
+set_global_assignment -name QIP_FILE LargerRAM.qip
+set_global_assignment -name SYSTEMVERILOG_FILE hazard.sv
+set_global_assignment -name SYSTEMVERILOG_FILE flopenrc.sv
+set_global_assignment -name SYSTEMVERILOG_FILE floprc.sv
+set_global_assignment -name SYSTEMVERILOG_FILE mux3.sv
+set_global_assignment -name SYSTEMVERILOG_FILE eqcmp.sv
+>>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:Processor.qsf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
