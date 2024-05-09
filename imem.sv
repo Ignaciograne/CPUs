@@ -6,6 +6,6 @@ module imem(input  logic [31:0] a,
 	initial
 		$readmemh("C:/Users/Ignac/Documentos/Arqui1/PruebasDeProcesador/JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-VersionConROMs/Proyecto/memfiletwo.dat", RAM);
 	
-	assign rd = RAM[a[31:2]]; // word aligned
+	assign rd = RAM[a[22:2]]; // word aligned
 				
 endmodule
