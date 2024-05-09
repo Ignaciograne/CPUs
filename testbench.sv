@@ -5,9 +5,10 @@ module testbench();
 	logic 		 reset;
 	logic [31:0] WriteData, DataAdr;
 	logic			 MemWrite;
+	logic [31:0] ReadData;
 
 	// Instantiate top
-	top dut(clk, reset, WriteData, DataAdr, MemWrite);
+	top dut(clk, reset, WriteData, DataAdr, MemWrite, ReadData);
 
 	// Initialize
 	initial
@@ -31,7 +32,7 @@ module testbench();
 		if (MemWrite) begin
 			if (DataAdr === 100 & WriteData === 7) begin
 				$display("Simulation succeeded");
-				$stop;
+				 $stop;
 			end else if (DataAdr != 96) begin
 				$display("Simulation failed");
 				$stop;

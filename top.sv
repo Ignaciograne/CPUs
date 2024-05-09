@@ -1,9 +1,10 @@
 module top(input  logic 		 clk, reset,
            output logic [31:0] WriteData, DataAdr,
-           output logic        MemWrite);
+           output logic        MemWrite,
+			  output logic [31:0] ReadData);
 
 	logic [31:0] PC;
-	logic [31:0] Instr, ReadData;
+	logic [31:0] Instr;//, ReadData;
 	//logic [31:0] WriteData, DataAdr;
 	//logic MemWrite;
 	logic [15:0] ROM_Addres;
@@ -25,7 +26,7 @@ module top(input  logic 		 clk, reset,
         .q(Instr)
     );*/
 	 
-	dmem dmen1(clk, MemWrite, DataAdr, WriteData, ReadData);
+	//dmem dmen1(clk, MemWrite, DataAdr, WriteData, ReadData);
 	
 	
 	//logic [7:0] output_RAM;
@@ -48,6 +49,14 @@ module top(input  logic 		 clk, reset,
         .data(WriteData[7:0]),
         .q(ReadData[7:0])
     );*/
+	 
+	 LargerRAM ram1(
+		  .clock(clk),
+		  .wren(MemWrite),
+        .address(DataAdr),
+        .data(WriteData),
+        .q(ReadData)
+    );
 
 
 endmodule
