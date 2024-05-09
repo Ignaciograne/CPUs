@@ -1,9 +1,5 @@
 Flow report for Processor
-<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.flow.rpt
-Thu May  9 05:21:09 2024
-=======
-Thu May  9 03:40:53 2024
->>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.flow.rpt
+Thu May  9 05:38:57 2024
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
@@ -45,26 +41,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +---------------------------------+------------------------------------------------+
-<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.flow.rpt
-; Flow Status                     ; Successful - Thu May  9 05:21:09 2024          ;
-=======
-; Flow Status                     ; Successful - Thu May  9 03:40:53 2024          ;
->>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.flow.rpt
+; Flow Status                     ; Successful - Thu May  9 05:38:57 2024          ;
 ; Quartus Prime Version           ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
 ; Revision Name                   ; Processor                                      ;
 ; Top-level Entity Name           ; top                                            ;
 ; Family                          ; Cyclone V                                      ;
 ; Device                          ; 5CSEMA5F31C6                                   ;
 ; Timing Models                   ; Final                                          ;
-<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.flow.rpt
 ; Logic utilization (in ALMs)     ; 856 / 32,070 ( 3 % )                           ;
 ; Total registers                 ; 978                                            ;
 ; Total pins                      ; 67 / 457 ( 15 % )                              ;
-=======
-; Logic utilization (in ALMs)     ; 950 / 32,070 ( 3 % )                           ;
-; Total registers                 ; 961                                            ;
-; Total pins                      ; 99 / 457 ( 22 % )                              ;
->>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.flow.rpt
 ; Total virtual pins              ; 0                                              ;
 ; Total block memory bits         ; 2,097,152 / 4,065,280 ( 52 % )                 ;
 ; Total DSP Blocks                ; 0 / 87 ( 0 % )                                 ;
@@ -82,11 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.flow.rpt
-; Start date & time ; 05/09/2024 05:16:12 ;
-=======
-; Start date & time ; 05/09/2024 03:35:45 ;
->>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.flow.rpt
+; Start date & time ; 05/09/2024 05:33:57 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Processor           ;
 +-------------------+---------------------+
@@ -97,11 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.flow.rpt
-; COMPILER_SIGNATURE_ID                ; 167300352075799.171525337209292        ; --            ; --          ; --                                ;
-=======
-; COMPILER_SIGNATURE_ID                ; 167300352075799.171524734504992        ; --            ; --          ; --                                ;
->>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.flow.rpt
+; COMPILER_SIGNATURE_ID                ; 167300352075799.171525443716552        ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testbench                         ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
@@ -134,21 +112,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.flow.rpt
-; Analysis & Synthesis ; 00:00:23     ; 1.0                     ; 4935 MB             ; 00:00:35                           ;
-; Fitter               ; 00:03:59     ; 1.2                     ; 6782 MB             ; 00:05:17                           ;
-; Assembler            ; 00:00:10     ; 1.0                     ; 4902 MB             ; 00:00:10                           ;
-; Timing Analyzer      ; 00:00:15     ; 3.3                     ; 5295 MB             ; 00:00:38                           ;
+; Analysis & Synthesis ; 00:00:25     ; 1.0                     ; 4944 MB             ; 00:00:35                           ;
+; Fitter               ; 00:04:03     ; 1.1                     ; 6790 MB             ; 00:05:09                           ;
+; Assembler            ; 00:00:10     ; 1.0                     ; 4902 MB             ; 00:00:09                           ;
+; Timing Analyzer      ; 00:00:13     ; 2.9                     ; 5286 MB             ; 00:00:30                           ;
 ; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4779 MB             ; 00:00:03                           ;
-; Total                ; 00:04:50     ; --                      ; --                  ; 00:06:43                           ;
-=======
-; Analysis & Synthesis ; 00:00:35     ; 1.0                     ; 4965 MB             ; 00:00:37                           ;
-; Fitter               ; 00:03:55     ; 1.2                     ; 6795 MB             ; 00:05:15                           ;
-; Assembler            ; 00:00:12     ; 1.0                     ; 4908 MB             ; 00:00:09                           ;
-; Timing Analyzer      ; 00:00:14     ; 2.8                     ; 5297 MB             ; 00:00:30                           ;
-; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4778 MB             ; 00:00:03                           ;
-; Total                ; 00:04:59     ; --                      ; --                  ; 00:06:34                           ;
->>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.flow.rpt
+; Total                ; 00:04:54     ; --                      ; --                  ; 00:06:26                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

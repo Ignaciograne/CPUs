@@ -1,20 +1,11 @@
-<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.map.summary
-Analysis & Synthesis Status : Successful - Thu May  9 05:16:36 2024
-=======
-Analysis & Synthesis Status : Successful - Thu May  9 03:36:22 2024
->>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.map.summary
+Analysis & Synthesis Status : Successful - Thu May  9 05:34:22 2024
 Quartus Prime Version : 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 Revision Name : Processor
 Top-level Entity Name : top
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-<<<<<<< HEAD:JAguero_IGrane_MGonzales-Digital_Desing_Workshop-2023-Pipelined/Proyecto/output_files/Processor.map.summary
 Total registers : 954
 Total pins : 67
-=======
-Total registers : 928
-Total pins : 99
->>>>>>> c951c2ff4ab034a0dda1c5b6ed5f502a36b4234b:output_files/Processor.map.summary
 Total virtual pins : 0
 Total block memory bits : 2,097,152
 Total DSP Blocks : 0
