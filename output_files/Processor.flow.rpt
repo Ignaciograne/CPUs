@@ -1,5 +1,5 @@
 Flow report for Processor
-Wed May  8 12:45:19 2024
+Wed May  8 23:28:18 2024
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +---------------------------------+------------------------------------------------+
-; Flow Status                     ; Successful - Wed May  8 12:45:19 2024          ;
+; Flow Status                     ; Successful - Wed May  8 23:28:18 2024          ;
 ; Quartus Prime Version           ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
 ; Revision Name                   ; Processor                                      ;
 ; Top-level Entity Name           ; top                                            ;
@@ -49,11 +49,11 @@ https://fpgasoftware.intel.com/eula.
 ; Device                          ; 5CSEMA5F31C6                                   ;
 ; Timing Models                   ; Final                                          ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 522                                            ;
+; Total registers                 ; 2563                                           ;
 ; Total pins                      ; 67                                             ;
 ; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 4,194,304                                      ;
-; Total DSP Blocks                ; 0                                              ;
+; Total block memory bits         ; 0                                              ;
+; Total DSP Blocks                ; 3                                              ;
 ; Total HSSI RX PCSs              ; 0                                              ;
 ; Total HSSI PMA RX Deserializers ; 0                                              ;
 ; Total HSSI TX PCSs              ; 0                                              ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/08/2024 12:44:58 ;
+; Start date & time ; 05/08/2024 23:28:01 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Processor           ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 167300352075799.171519389803440        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 167300352075799.171523248006128        ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testbench                         ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
@@ -109,6 +109,8 @@ https://fpgasoftware.intel.com/eula.
 ; MISC_FILE                            ; instructionROM_bb.v                    ; --            ; --          ; --                                ;
 ; MISC_FILE                            ; RAMMemory_inst.v                       ; --            ; --          ; --                                ;
 ; MISC_FILE                            ; RAMMemory_bb.v                         ; --            ; --          ; --                                ;
+; MISC_FILE                            ; LaterRAM_inst.v                        ; --            ; --          ; --                                ;
+; MISC_FILE                            ; LaterRAM_bb.v                          ; --            ; --          ; --                                ;
 ; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; top         ; Top                               ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; top         ; Top                               ;
 ; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; top         ; Top                               ;
@@ -124,8 +126,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:21     ; 1.0                     ; 4892 MB             ; 00:00:29                           ;
-; Total                ; 00:00:21     ; --                      ; --                  ; 00:00:29                           ;
+; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 4900 MB             ; 00:00:23                           ;
+; Total                ; 00:00:17     ; --                      ; --                  ; 00:00:23                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,4 +1,4 @@
-module top(input logic 			 clk, reset,
+module top(input  logic 		 clk, reset,
            output logic [31:0] WriteData, DataAdr,
            output logic        MemWrite);
 
@@ -15,25 +15,39 @@ module top(input logic 			 clk, reset,
 	arm arm1(clk, reset, PC, Instr, MemWrite, DataAdr, WriteData, ReadData);
 	//ROM rom(ROM_Addres, clk, output_ROM);
 	//ROM_Instruction rom_instruction(PC, clk, Instr);
-	//imem imem1(PC, Instr);
+	imem imem1(PC, Instr);
 	
 	// Instancia de módulo ROM personalizado
+	/*
     instructionROM rom1(
         .address(PC[15:0]), 
         .clock(clk),
         .q(Instr)
-    );
+    );*/
 	 
-	//dmem dmen1(clk, MemWrite, DataAdr, WriteData, ReadData);
+	dmem dmen1(clk, MemWrite, DataAdr, WriteData, ReadData);
+	
+	
+	//logic [7:0] output_RAM;
+	//assign output_RAM = ReadData[7:0];
 	
 	// Instancia de módulo RAM personalizado para datos
-	RAMMemory ram1(
-        .address(DataAdr[15:0]),
-        .clock(clk),
+	/*RAMMemory ram1(
+		  .clock(clk),
+		  .wren(MemWrite),
+        .address(DataAdr),
         .data(WriteData),
-        .wren(MemWrite),
-        .q(ReadData)
-    );
+        .q(output_RAM)
+    );*/
+	 
+	 /*
+	 LaterRAM ram1(
+		  .clock(clk),
+		  .wren(MemWrite),
+        .address(DataAdr),
+        .data(WriteData[7:0]),
+        .q(ReadData[7:0])
+    );*/
 
 
 endmodule
