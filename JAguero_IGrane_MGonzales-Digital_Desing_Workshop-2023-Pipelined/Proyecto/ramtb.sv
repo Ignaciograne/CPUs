@@ -1,49 +1,58 @@
 `timescale 1ns / 1ps
 
 module ramtb;
-    // Inputs
-    reg clk;
-    reg reset;
-    reg [15:0] address;
 
-    // Outputs
-    wire [31:0] q;
+  logic        clk, reset;
+  logic [31:0] WriteDataM, DataAdrM;
+  logic        MemWriteM;
+  logic [31:0] ReadDataM;
 
-    // Instantiate the RAM module
-    RAMMemory uut (
-        .address(address),
-        .clock(clk),
-        .data(32'b0), // No data writing in this test
-        .wren(0), // Write enable is off
-        .q(q)
-    );
+  // Instantiate the top module
+  top dut (
+    .clk(clk),
+    .reset(reset),
+    .WriteDataM(WriteDataM),
+    .DataAdrM(DataAdrM),
+    .MemWriteM(MemWriteM)
+  );
 
-    // Clock generation
-    always #10 clk = ~clk; // Toggle clock every 10 ns
+  // Clock generation
+  always begin
+    clk = 1'b0;
+    #5;
+    clk = 1'b1;
+    #5;
+  end
 
-    // Test sequence
-    initial begin
-        // Initialize Inputs
-        clk = 0;
-        reset = 1;
-        address = 0;
+  // Reset generation
+  initial begin
+    reset = 1'b1;
+    #30;
+    reset = 1'b0;
+  end
 
-        // Reset the system
-        #25;
-        reset = 0;
-        #25;
-        reset = 1;
-        #20;
+  // Testbench variables
+  integer i;
 
-        // Read cycle
-        for (int i = 0; i <= 104; i++) begin
-            address = i; // Set the address
-            #20; // Wait for memory to process
-            $display("Address: %d, Data: %h", address, q); // Display address and data
-        end
+  // Testbench process
+  initial begin
+    // Wait for reset to deassert
+    //@(negedge reset);
 
-        // Complete the test
-        #100;
-        $stop;
+    // Wait for a few clock cycles
+    //repeat(50) @(posedge clk);
+
+    // Display RAM contents
+    $display("RAM Contents:");
+    for (i = 0; i <= 104; i = i + 4) begin
+      DataAdrM = i;
+      @(posedge clk);
+      ReadDataM = dut.ram1.q;
+      $display("Address: %0d, Data: %0h", i, ReadDataM);
     end
+
+    // Finish the simulation
+    $stop;
+  end
+
 endmodule
