@@ -1,0 +1,55 @@
+`timescale 1ns / 1ps
+
+module testbench;
+    // Señales para interconectar con el módulo top
+    reg clk, reset;
+    wire [31:0] WriteDataM, DataAdrM, ReadDataM;
+    wire MemWriteM;
+
+    // Instancia del módulo top
+    top uut (
+        .clk(clk),
+        .reset(reset),
+        .WriteDataM(WriteDataM),
+        .DataAdrM(DataAdrM),
+        .MemWriteM(MemWriteM)
+    );
+
+    // Generador de reloj
+    always #10 clk = ~clk;  // Cambia el estado del reloj cada 10ns
+
+    // Procedimiento de inicialización
+    initial begin
+        // Inicialización de las señales
+        clk = 0;
+        reset = 1;
+
+        // Ejecutar un reset durante 20ns
+        #20 reset = 0;
+
+        // Secuencia de prueba
+        #40; // Esperar para estabilización del sistema
+
+        // Pruebas de lectura
+        read_data(32'h0000_0000);  // Leer la dirección 0x00000000
+        read_data(32'h0000_0004);  // Leer la dirección 0x00000004
+        read_data(32'h0000_0008);  // Leer la dirección 0x00000008, etc.
+
+        // Finalizar simulación
+        #100 $finish;
+    end
+
+    // Task para leer datos de la memoria
+    task read_data(input [31:0] addr);
+        begin
+            @(posedge clk) begin
+                uut.arm.MemWriteM = 0;  // Asegurar que no estamos escribiendo
+                uut.arm.DataAdrM = addr;  // Configurar dirección de lectura
+            end
+            @(posedge clk) begin
+                $display("Leyendo dirección %h: valor %h", addr, uut.ram1.ReadDataM);  // Mostrar el dato leído
+            end
+        end
+    endtask
+
+endmodule
